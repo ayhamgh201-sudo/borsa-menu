@@ -26,3 +26,11 @@ img:not([src]){visibility:hidden}
 .image-btns{display:flex;gap:8px;flex-wrap:wrap}
 .file-btn{position:relative;overflow:hidden;display:inline-block}
 .file-btn input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+
+/* ===== صور الأصناف ===== */
+.food-art,.item-icon{overflow:hidden}
+.food-art img,.item-icon img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
+.food-art img{position:absolute;inset:0}
+.food-art:has(img){height:170px;background:#fff}
+.food-art:has(img):after{display:none}
+.item-icon:has(img){width:64px;height:64px;border-radius:12px;background:#fff;border:1px solid #eee7d8}
